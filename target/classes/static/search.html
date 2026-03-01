@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Donor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">❤️ AI Blood Donor</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="search.html">Find Donor</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Find a Blood Donor</h1>
+
+    <div class="form-container" style="max-width: 600px;">
+        <div class="form-group">
+            <label for="searchBloodGroup">Blood Group Needed</label>
+            <select id="searchBloodGroup">
+                <option value="Any">Any</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="searchCity">City</label>
+            <input type="text" id="searchCity" placeholder="Enter city name">
+        </div>
+
+        <button id="searchBtn" class="btn" style="width: 100%;">Search Donors</button>
+    </div>
+
+    <div id="resultsContainer" class="results-grid">
+        <!-- Results will appear here via JS -->
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 AI Blood Donor Finder. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
